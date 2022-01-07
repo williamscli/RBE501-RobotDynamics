@@ -2,9 +2,8 @@ README
 
 What is in the Final Project folder.
 1. Final project report
-2. Project powerpoint presentation
-3. Final presentation video
-4. Path Planning video
+2. Project powerpoint presentation (pdf version) 
+3. Path Planning video (available upon request)
 5. MatLab project code in .mlx and .m files. .m file is compressed to run the code quicker. .mlx folder has detialed write up alongside code.
 
 How to run code:
