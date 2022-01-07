@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="UR5_fliper">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="-0.165004284473545 0.0165607580747377 0.000367578184848352"
+        rpy="0 0 0" />
+      <mass
+        value="0.504310536001636" />
+      <inertia
+        ixx="0.000602583494773675"
+        ixy="1.52772510810869E-06"
+        ixz="-1.7501892098228E-05"
+        iyy="0.00107088535247836"
+        iyz="-1.52407378789196E-06"
+        izz="0.000602609343090757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="-0.0789664232170492 0.016439225224334 -6.16598136958524E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.57302816596076" />
+      <inertia
+        ixx="0.00282986624241528"
+        ixy="0.000319347012558025"
+        ixz="-1.48241164062108E-07"
+        iyy="0.00253796949118933"
+        iyz="4.44076781306191E-07"
+        izz="0.00262075724148173" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="continuous">
+    <origin
+      xyz="-0.164637260701658 0 0.00999155223323138"
+      rpy="0.923708674476817 1.5707963267949 0" />
+    <parent
+      link="Base" />
+    <child
+      link="L1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="-0.216516716203034 0.133115093333718 9.61251375858341E-08"
+        rpy="0 0 0" />
+      <mass
+        value="4.66872666797448" />
+      <inertia
+        ixx="0.00636702149521428"
+        ixy="-1.9464590526614E-08"
+        ixz="9.00150502174438E-07"
+        iyy="0.0218237861667245"
+        iyz="-2.30361168359261E-07"
+        izz="0.0213266160000516" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="continuous">
+    <origin
+      xyz="-0.0800084477667682 0 0"
+      rpy="0 -1.41544784088203 0" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="-0.173897633024149 0.0207726450425849 -2.77701557732657E-06"
+        rpy="0 0 0" />
+      <mass
+        value="2.68551952189864" />
+      <inertia
+        ixx="0.00224101029753479"
+        ixy="-0.000112852901048005"
+        ixz="4.04064385371727E-07"
+        iyy="0.0118077417400091"
+        iyz="-2.69170644274326E-07"
+        izz="0.0116551631329223" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="continuous">
+    <origin
+      xyz="-0.425 0 0"
+      rpy="3.14159265358979 0.685492341241208 3.14159265358979" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L4">
+    <inertial>
+      <origin
+        xyz="0.00375303385840803 0.0987989640699958 1.26799881210726E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.540828490867422" />
+      <inertia
+        ixx="0.000411401696889176"
+        ixy="4.27831193573069E-05"
+        ixz="-2.85527858893326E-07"
+        iyy="0.000367439229749344"
+        iyz="4.08131882155912E-07"
+        izz="0.00038699985508972" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="continuous">
+    <origin
+      xyz="-0.392250000000001 0 0"
+      rpy="-3.14159265358979 1.10530237303082 -3.14159265358979" />
+    <parent
+      link="L3" />
+    <child
+      link="L4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L5">
+    <inertial>
+      <origin
+        xyz="-0.0837492314926818 -0.00375325508748925 -1.23700063244109E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.540829838323916" />
+      <inertia
+        ixx="0.00036744121268581"
+        ixy="4.27821358048603E-05"
+        ixz="4.1003826036965E-07"
+        iyy="0.000411404728664971"
+        iyz="-2.86989820095438E-07"
+        izz="0.000387000233062868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="continuous">
+    <origin
+      xyz="0 0.109970000000011 0"
+      rpy="-1.57079632679487 0 0" />
+    <parent
+      link="L4" />
+    <child
+      link="L5" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="L6">
+    <inertial>
+      <origin
+        xyz="-0.0047355844859667 0.0866338973654337 0.00539012008848103"
+        rpy="0 0 0" />
+      <mass
+        value="0.231237735635503" />
+      <inertia
+        ixx="0.000460577480652409"
+        ixy="3.74092579990007E-05"
+        ixz="-5.775243321851E-05"
+        iyy="0.000287507833069325"
+        iyz="-4.24277231321077E-05"
+        izz="0.00047529403612137" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UR5_fliper/meshes/L6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="continuous">
+    <origin
+      xyz="-0.09492 0 0"
+      rpy="0 -0.84499 0" />
+    <parent
+      link="L5" />
+    <child
+      link="L6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
